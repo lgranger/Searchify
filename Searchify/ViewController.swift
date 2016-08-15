@@ -23,6 +23,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(albumSearchBar: UISearchBar) {
         //call the method that calls the api
+        getAlbumData(albumSearchBar.text!)
         print("searchText \(albumSearchBar.text)")
     }
 
