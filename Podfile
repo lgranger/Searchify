@@ -9,6 +9,7 @@ target 'Searchify' do
 
     pod 'Alamofire', '3.4.1'
     pod 'SwiftyJSON', '2.3'
+    pod 'AlamofireImage', '~> 2.0'
 
   target 'SearchifyTests' do
     inherit! :search_paths
