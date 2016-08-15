@@ -17,21 +17,20 @@ func getAlbumData(searchTerm:String) {
     Alamofire.request(.GET, "https://api.spotify.com/v1/search?query=\(searchTerm)&limit=10&type=album")
         .responseJSON { response in
 
-            let albumData = JSON(response.result.value!) //need to figure out exactly how this come isn
-            //let userName = userData["name"].string!
-                
+            let albumData = JSON(response.result.value!["albums"]!!["items"]!!)
+            
             print(albumData)
+            
+            for i in 0...9 {
+            
+                let name = albumData[i]["name"]
+                let spotifyUrl = albumData[i]["external_urls"]["spotify"]
+                let imageUrl = albumData[i]["images"][0]["url"]
                 
-//            let id = userData["id"].int!
-//            let userFBid = "\(FBSDKAccessToken.currentAccessToken().userID)"
-//            let userPic = userData["profile_pic"].string!
-//            let msgStat = userData["messages_status"].string!
-//            
-//            let myUser = User(id:id, FBid:userFBid, name:userName, picUrl: userPic, msgStat: msgStat)
-//            
-//            CurrentUser.sharedInstance.user = myUser
-//            
-//            completionHandler(myUser)
+                print("\(name), \(spotifyUrl), \(imageUrl)")
+
+            }
+
         }
 
 }

@@ -14,7 +14,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var albumTableView: UITableView!
     
     typealias albumImageLinkTuple = (imageURL:String, spotifyURL:String)
-    private var albumDataDict: [String: albumImageLinkTuple] = [ : ]
+    var albumDataDict: [String: albumImageLinkTuple] = [ : ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
