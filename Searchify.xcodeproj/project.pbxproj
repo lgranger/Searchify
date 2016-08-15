@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45F6C9E96F0E4E5437CA9A32 /* Pods_SearchifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D6B3C0494E4645736F6226 /* Pods_SearchifyTests.framework */; };
+		ABB9D1A39235AF55A0C778C4 /* Pods_Searchify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369F71C49352D1E6F10B238D /* Pods_Searchify.framework */; };
+		DA61E2ED1D6113C7007CDD7F /* GetAlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61E2EC1D6113C7007CDD7F /* GetAlbumData.swift */; };
+		DA8698CF1D5C25C70005A7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8698CE1D5C25C70005A7E7 /* AppDelegate.swift */; };
+		DA8698D11D5C25C70005A7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8698D01D5C25C70005A7E7 /* ViewController.swift */; };
+		DA8698D41D5C25C70005A7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8698D21D5C25C70005A7E7 /* Main.storyboard */; };
+		DA8698D71D5C25C70005A7E7 /* Searchify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA8698D51D5C25C70005A7E7 /* Searchify.xcdatamodeld */; };
+		DA8698D91D5C25C70005A7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8698D81D5C25C70005A7E7 /* Assets.xcassets */; };
+		DA8698DC1D5C25C70005A7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8698DA1D5C25C70005A7E7 /* LaunchScreen.storyboard */; };
+		DA8698E71D5C25C70005A7E7 /* SearchifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8698E61D5C25C70005A7E7 /* SearchifyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA8698E31D5C25C70005A7E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA8698C31D5C25C60005A7E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8698CA1D5C25C60005A7E7;
+			remoteInfo = Searchify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1830C6D02D70C9C4C579CB7F /* Pods-Searchify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Searchify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Searchify/Pods-Searchify.debug.xcconfig"; sourceTree = "<group>"; };
+		1E7339B5137B4DB5DA71F8AD /* Pods-SearchifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchifyTests/Pods-SearchifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		369F71C49352D1E6F10B238D /* Pods_Searchify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Searchify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7080C28E36FC9C94A24F35AD /* Pods-Searchify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Searchify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Searchify/Pods-Searchify.release.xcconfig"; sourceTree = "<group>"; };
+		73D6B3C0494E4645736F6226 /* Pods_SearchifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA9872FE80344B0DEA4DD62 /* Pods-SearchifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchifyTests/Pods-SearchifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA61E2EC1D6113C7007CDD7F /* GetAlbumData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAlbumData.swift; sourceTree = "<group>"; };
+		DA8698CB1D5C25C60005A7E7 /* Searchify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Searchify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8698CE1D5C25C70005A7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA8698D01D5C25C70005A7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA8698D31D5C25C70005A7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA8698D61D5C25C70005A7E7 /* Searchify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Searchify.xcdatamodel; sourceTree = "<group>"; };
+		DA8698D81D5C25C70005A7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA8698DB1D5C25C70005A7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA8698DD1D5C25C70005A7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8698E21D5C25C70005A7E7 /* SearchifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8698E61D5C25C70005A7E7 /* SearchifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchifyTests.swift; sourceTree = "<group>"; };
+		DA8698E81D5C25C70005A7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA8698C81D5C25C60005A7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB9D1A39235AF55A0C778C4 /* Pods_Searchify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8698DF1D5C25C70005A7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F6C9E96F0E4E5437CA9A32 /* Pods_SearchifyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85ED2717E87550863B1CFFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369F71C49352D1E6F10B238D /* Pods_Searchify.framework */,
+				73D6B3C0494E4645736F6226 /* Pods_SearchifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA8698C21D5C25C60005A7E7 = {
+			isa = PBXGroup;
+			children = (
+				DA8698CD1D5C25C70005A7E7 /* Searchify */,
+				DA8698E51D5C25C70005A7E7 /* SearchifyTests */,
+				DA8698CC1D5C25C60005A7E7 /* Products */,
+				F9EA0D5E0BBA3D3783CE707E /* Pods */,
+				85ED2717E87550863B1CFFAD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA8698CC1D5C25C60005A7E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA8698CB1D5C25C60005A7E7 /* Searchify.app */,
+				DA8698E21D5C25C70005A7E7 /* SearchifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA8698CD1D5C25C70005A7E7 /* Searchify */ = {
+			isa = PBXGroup;
+			children = (
+				DA8698CE1D5C25C70005A7E7 /* AppDelegate.swift */,
+				DA8698D01D5C25C70005A7E7 /* ViewController.swift */,
+				DA8698D21D5C25C70005A7E7 /* Main.storyboard */,
+				DA61E2EC1D6113C7007CDD7F /* GetAlbumData.swift */,
+				DA8698D81D5C25C70005A7E7 /* Assets.xcassets */,
+				DA8698DA1D5C25C70005A7E7 /* LaunchScreen.storyboard */,
+				DA8698DD1D5C25C70005A7E7 /* Info.plist */,
+				DA8698D51D5C25C70005A7E7 /* Searchify.xcdatamodeld */,
+			);
+			path = Searchify;
+			sourceTree = "<group>";
+		};
+		DA8698E51D5C25C70005A7E7 /* SearchifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA8698E61D5C25C70005A7E7 /* SearchifyTests.swift */,
+				DA8698E81D5C25C70005A7E7 /* Info.plist */,
+			);
+			path = SearchifyTests;
+			sourceTree = "<group>";
+		};
+		F9EA0D5E0BBA3D3783CE707E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1830C6D02D70C9C4C579CB7F /* Pods-Searchify.debug.xcconfig */,
+				7080C28E36FC9C94A24F35AD /* Pods-Searchify.release.xcconfig */,
+				ACA9872FE80344B0DEA4DD62 /* Pods-SearchifyTests.debug.xcconfig */,
+				1E7339B5137B4DB5DA71F8AD /* Pods-SearchifyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA8698CA1D5C25C60005A7E7 /* Searchify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8698EB1D5C25C70005A7E7 /* Build configuration list for PBXNativeTarget "Searchify" */;
+			buildPhases = (
+				345C8E2997ACC4690606BFC6 /* [CP] Check Pods Manifest.lock */,
+				DA8698C71D5C25C60005A7E7 /* Sources */,
+				DA8698C81D5C25C60005A7E7 /* Frameworks */,
+				DA8698C91D5C25C60005A7E7 /* Resources */,
+				2657CB22F8EB04127432049B /* [CP] Embed Pods Frameworks */,
+				4E8684902735CD965145D55F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Searchify;
+			productName = Searchify;
+			productReference = DA8698CB1D5C25C60005A7E7 /* Searchify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA8698E11D5C25C70005A7E7 /* SearchifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8698EE1D5C25C70005A7E7 /* Build configuration list for PBXNativeTarget "SearchifyTests" */;
+			buildPhases = (
+				97A792929DABF6AA7A31F3B8 /* [CP] Check Pods Manifest.lock */,
+				DA8698DE1D5C25C70005A7E7 /* Sources */,
+				DA8698DF1D5C25C70005A7E7 /* Frameworks */,
+				DA8698E01D5C25C70005A7E7 /* Resources */,
+				686FA4B37973D364586AAF6B /* [CP] Embed Pods Frameworks */,
+				629D8B02C7C41685517F57E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA8698E41D5C25C70005A7E7 /* PBXTargetDependency */,
+			);
+			name = SearchifyTests;
+			productName = SearchifyTests;
+			productReference = DA8698E21D5C25C70005A7E7 /* SearchifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA8698C31D5C25C60005A7E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lauren Granger";
+				TargetAttributes = {
+					DA8698CA1D5C25C60005A7E7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DA8698E11D5C25C70005A7E7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA8698CA1D5C25C60005A7E7;
+					};
+				};
+			};
+			buildConfigurationList = DA8698C61D5C25C60005A7E7 /* Build configuration list for PBXProject "Searchify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA8698C21D5C25C60005A7E7;
+			productRefGroup = DA8698CC1D5C25C60005A7E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA8698CA1D5C25C60005A7E7 /* Searchify */,
+				DA8698E11D5C25C70005A7E7 /* SearchifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA8698C91D5C25C60005A7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8698DC1D5C25C70005A7E7 /* LaunchScreen.storyboard in Resources */,
+				DA8698D91D5C25C70005A7E7 /* Assets.xcassets in Resources */,
+				DA8698D41D5C25C70005A7E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8698E01D5C25C70005A7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2657CB22F8EB04127432049B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Searchify/Pods-Searchify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		345C8E2997ACC4690606BFC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8684902735CD965145D55F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Searchify/Pods-Searchify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		629D8B02C7C41685517F57E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchifyTests/Pods-SearchifyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		686FA4B37973D364586AAF6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchifyTests/Pods-SearchifyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97A792929DABF6AA7A31F3B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA8698C71D5C25C60005A7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA61E2ED1D6113C7007CDD7F /* GetAlbumData.swift in Sources */,
+				DA8698D71D5C25C70005A7E7 /* Searchify.xcdatamodeld in Sources */,
+				DA8698D11D5C25C70005A7E7 /* ViewController.swift in Sources */,
+				DA8698CF1D5C25C70005A7E7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8698DE1D5C25C70005A7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8698E71D5C25C70005A7E7 /* SearchifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA8698E41D5C25C70005A7E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8698CA1D5C25C60005A7E7 /* Searchify */;
+			targetProxy = DA8698E31D5C25C70005A7E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA8698D21D5C25C70005A7E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8698D31D5C25C70005A7E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA8698DA1D5C25C70005A7E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8698DB1D5C25C70005A7E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA8698E91D5C25C70005A7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA8698EA1D5C25C70005A7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA8698EC1D5C25C70005A7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1830C6D02D70C9C4C579CB7F /* Pods-Searchify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Searchify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.granger.Searchify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA8698ED1D5C25C70005A7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7080C28E36FC9C94A24F35AD /* Pods-Searchify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Searchify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.granger.Searchify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA8698EF1D5C25C70005A7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA9872FE80344B0DEA4DD62 /* Pods-SearchifyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SearchifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.granger.SearchifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Searchify.app/Searchify";
+			};
+			name = Debug;
+		};
+		DA8698F01D5C25C70005A7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7339B5137B4DB5DA71F8AD /* Pods-SearchifyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SearchifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.granger.SearchifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Searchify.app/Searchify";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA8698C61D5C25C60005A7E7 /* Build configuration list for PBXProject "Searchify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8698E91D5C25C70005A7E7 /* Debug */,
+				DA8698EA1D5C25C70005A7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8698EB1D5C25C70005A7E7 /* Build configuration list for PBXNativeTarget "Searchify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8698EC1D5C25C70005A7E7 /* Debug */,
+				DA8698ED1D5C25C70005A7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8698EE1D5C25C70005A7E7 /* Build configuration list for PBXNativeTarget "SearchifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8698EF1D5C25C70005A7E7 /* Debug */,
+				DA8698F01D5C25C70005A7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA8698D51D5C25C70005A7E7 /* Searchify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA8698D61D5C25C70005A7E7 /* Searchify.xcdatamodel */,
+			);
+			currentVersion = DA8698D61D5C25C70005A7E7 /* Searchify.xcdatamodel */;
+			path = Searchify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA8698C31D5C25C60005A7E7 /* Project object */;
+}
