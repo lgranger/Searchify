@@ -13,17 +13,16 @@ class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var albumSearchBar: UISearchBar!
     @IBOutlet weak var albumTableView: UITableView!
     
-    typealias albumImageLinkTuple = (imageURL:String, spotifyURL:String)
-    var albumDataDict: [String: albumImageLinkTuple] = [ : ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         albumSearchBar.delegate = self
     }
     
-    func searchBarSearchButtonClicked(albumSearchBar: UISearchBar) {
+    var albumDict = DataStore()
+    
+    func searchBarSearchButtonClicked(albumSearchBar: UISearchBar, albumDict: DataStore) {
         //call the method that calls the api
-        getAlbumData(albumSearchBar.text!)
+        getAlbumData(albumSearchBar.text!, albumDict: albumDict)
         print("searchText \(albumSearchBar.text)")
     }
 

@@ -10,6 +10,7 @@
 		45F6C9E96F0E4E5437CA9A32 /* Pods_SearchifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D6B3C0494E4645736F6226 /* Pods_SearchifyTests.framework */; };
 		ABB9D1A39235AF55A0C778C4 /* Pods_Searchify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369F71C49352D1E6F10B238D /* Pods_Searchify.framework */; };
 		DA61E2ED1D6113C7007CDD7F /* GetAlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61E2EC1D6113C7007CDD7F /* GetAlbumData.swift */; };
+		DA61E2EF1D616EC4007CDD7F /* GetImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61E2EE1D616EC4007CDD7F /* GetImageAsync.swift */; };
 		DA8698CF1D5C25C70005A7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8698CE1D5C25C70005A7E7 /* AppDelegate.swift */; };
 		DA8698D11D5C25C70005A7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8698D01D5C25C70005A7E7 /* ViewController.swift */; };
 		DA8698D41D5C25C70005A7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8698D21D5C25C70005A7E7 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		73D6B3C0494E4645736F6226 /* Pods_SearchifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA9872FE80344B0DEA4DD62 /* Pods-SearchifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchifyTests/Pods-SearchifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA61E2EC1D6113C7007CDD7F /* GetAlbumData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAlbumData.swift; sourceTree = "<group>"; };
+		DA61E2EE1D616EC4007CDD7F /* GetImageAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImageAsync.swift; sourceTree = "<group>"; };
 		DA8698CB1D5C25C60005A7E7 /* Searchify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Searchify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8698CE1D5C25C70005A7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8698D01D5C25C70005A7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				DA8698DA1D5C25C70005A7E7 /* LaunchScreen.storyboard */,
 				DA8698DD1D5C25C70005A7E7 /* Info.plist */,
 				DA8698D51D5C25C70005A7E7 /* Searchify.xcdatamodeld */,
+				DA61E2EE1D616EC4007CDD7F /* GetImageAsync.swift */,
 			);
 			path = Searchify;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA61E2EF1D616EC4007CDD7F /* GetImageAsync.swift in Sources */,
 				DA61E2ED1D6113C7007CDD7F /* GetAlbumData.swift in Sources */,
 				DA8698D71D5C25C70005A7E7 /* Searchify.xcdatamodeld in Sources */,
 				DA8698D11D5C25C70005A7E7 /* ViewController.swift in Sources */,
