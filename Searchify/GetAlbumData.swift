@@ -12,16 +12,14 @@ import SwiftyJSON
 
 // takes in user imput to search bar, saves results to a dict for display
 
-func getAlbumData(searchTerm:String) -> [String:(String,String)] {
+func getAlbumData(searchTerm:String, completionHandler:(Array<Array<String>>)->()) {
     
-    var albumDict = [String:(String,String)]()
+    var albumArray = Array<Array<String>>()
     
     Alamofire.request(.GET, "https://api.spotify.com/v1/search?query=\(searchTerm)&limit=10&type=album")
         .responseJSON { response in
 
             let albumData = JSON(response.result.value!["albums"]!!["items"]!!)
-            
-            print(albumData)
             
             for i in 0...9 {
             
@@ -29,13 +27,12 @@ func getAlbumData(searchTerm:String) -> [String:(String,String)] {
                 let spotifyUrl = albumData[i]["external_urls"]["spotify"].string!
                 let imageUrl = albumData[i]["images"][0]["url"].string!
                 
-                print("\(name), \(spotifyUrl), \(imageUrl)")
+                albumArray.append([name, spotifyUrl, imageUrl])
 
-                albumDict[name] = (spotifyUrl, imageUrl)
             }
+            
+            completionHandler(albumArray)
 
         }
-    
-    return albumDict
 
 }

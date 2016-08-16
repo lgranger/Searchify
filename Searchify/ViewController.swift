@@ -13,15 +13,21 @@ class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var albumSearchBar: UISearchBar!
     @IBOutlet weak var albumTableView: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         albumSearchBar.delegate = self
     }
     
+
+    
     func searchBarSearchButtonClicked(albumSearchBar: UISearchBar) {
+        
         //call the method that calls the api
-        getAlbumData(albumSearchBar.text!)
-        print("searchText \(albumSearchBar.text)")
+        getAlbumData(albumSearchBar.text!) { myArray in
+        print(myArray)
+        self.albumTableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
