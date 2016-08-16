@@ -12,7 +12,9 @@ import SwiftyJSON
 
 // takes in user imput to search bar, saves results to a dict for display
 
-func getAlbumData(searchTerm:String, albumDict:DataStore) {
+func getAlbumData(searchTerm:String) -> [String:(String,String)] {
+    
+    var albumDict = [String:(String,String)]()
     
     Alamofire.request(.GET, "https://api.spotify.com/v1/search?query=\(searchTerm)&limit=10&type=album")
         .responseJSON { response in
@@ -23,19 +25,17 @@ func getAlbumData(searchTerm:String, albumDict:DataStore) {
             
             for i in 0...9 {
             
-                let name = albumData[i]["name"]
-                let spotifyUrl = albumData[i]["external_urls"]["spotify"]
-                let imageUrl = albumData[i]["images"][0]["url"]
+                let name = albumData[i]["name"].string!
+                let spotifyUrl = albumData[i]["external_urls"]["spotify"].string!
+                let imageUrl = albumData[i]["images"][0]["url"].string!
                 
                 print("\(name), \(spotifyUrl), \(imageUrl)")
 
+                albumDict[name] = (spotifyUrl, imageUrl)
             }
 
         }
+    
+    return albumDict
 
-}
-
-class DataStore: NSDictionary {
-    typealias albumImageLinkTuple = (imageURL:String, spotifyURL:String)
-    var albumDataDict: [String: albumImageLinkTuple] = [ : ]
 }
